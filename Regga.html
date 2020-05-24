@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GolfGear</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text.css" href="GolfGear.css">
+        <script src="Main.js"></script>
+    </head>
+
+<body>
+    <h1>GolfGear</h1>
+    <h3>Fyll i nedan för att skapa konto</h3>
+        <form name="Registrera" method="POST" action="länk till php">
+
+            <label for="email">Email</label></br>
+            <input type="email" id="email"></br> <!--Eventuellt anv tag "Pattern" eller anv Java för att validera korrekt form på mailen-->
+
+            <label for="username">Användarnamn</label></br>
+            <input type="text" id="username"></br> 
+
+            <label for="password">Lösenord</label></br>
+            <input type="password" id="password"></br>
+
+            <input type="submit" value="Skapa konto" onclick="ValideraRegg">
+        </form>
+</body>
+</html>
