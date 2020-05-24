@@ -15,13 +15,11 @@ h1{
     background-color: transparent;
     text-align: center;
     padding: 15px;
-    color: black;
+    color:pink;
     font-family: 'Courier New', Courier, monospace;
 }
-form{
-    background-color: transparent;
-    text-align: center;
-    padding: 15px;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+.loggain{
+  background-color: indianred;
+  background-position: center;
+  text-align: center;
 }
