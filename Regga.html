@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>GolfGear</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Regga.css" />
-        <script src="Main.js"></script>
-    </head>
+
+<head>
+  <title>GolfGear</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Regga.css" />
+  <script src="Main.js"></script>
+</head>
 
 <body>
-    <h1>GolfGear</h1>
-    <h3>Fyll i nedan för att skapa konto</h3>
-        <form name="Registrera" method="POST" action="länk till php">
+  <h1>GolfGear</h1>
+  <h3>Fyll i nedan för att skapa konto</h3>
+  <form name="Registrera" method="POST" action="Registrera.php">
 
-            <label for="email">Email</label></br>
-            <input type="email" id="email"></br> <!--Eventuellt anv tag "Pattern" eller anv Java för att validera korrekt form på mailen-->
+    <label for="email">Email</label></br>
+    <input type="email" id="email" name="Email" required></br>
 
-            <label for="username">Användarnamn</label></br>
-            <input type="text" id="username"></br>
+    <label for="username">Användarnamn</label></br>
+    <input type="text" id="username" name="Username" required></br>
 
-            <label for="password">Lösenord</label></br>
-            <input type="password" id="password"></br>
+    <label for="password">Lösenord</label></br>
+    <input type="password" id="password" name="Password" required></br>
 
-            <input type="submit" value="Skapa konto" onclick="ValideraRegg">
-        </form>
+    <input type="submit" >  <!-- TODO: onclick="ValideraRegg" -->
+  </form>
 </body>
+
 </html>

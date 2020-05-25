@@ -1,26 +1,26 @@
 /*/* TODO: Fixa in i div classer i startsida html för att
 lättare styla senare */
-body{
-
-    background-image: url("golf.jpg");
-
+body {
+  background-image: url("golf.jpg");
 }
-h1{
-    background-color: transparent;
-    text-align: center;
-    padding: 15px;
-    color: pink;
-    font-family: 'Courier New', Courier, monospace;
 
+h1 {
+  background-color: transparent;
+  text-align: center;
+  padding: 15px;
+  color: pink;
+  font-family: 'Courier New', Courier, monospace;
 }
-.intro{
-    background-color: transparent;
-    text-align: center;
-    padding: 15px;
-    color:pink;
-    font-family: 'Courier New', Courier, monospace;
+
+.intro {
+  background-color: transparent;
+  text-align: center;
+  padding: 15px;
+  color: pink;
+  font-family: 'Courier New', Courier, monospace;
 }
-.loggain{
+
+.loggain {
   background-color: indianred;
   background-position: center;
   text-align: center;
