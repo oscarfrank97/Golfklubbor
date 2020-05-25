@@ -5,7 +5,7 @@ function ValideraRegg()
     var password = document.Registrera.password.value;
     var emailkrav1 = email.indexOf('@');
     var emailkrav2 = email.lastindexOf('.')
-    
+
 
     if (email.trim() == "")
     {
@@ -28,7 +28,7 @@ function ValideraRegg()
     {
         alert("Välkommen till GolfGear ditt konto är nu skapat!")
     }
-    
+
 
 }
 function ValideraInlogg()
