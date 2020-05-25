@@ -1,7 +1,9 @@
+/*/* TODO: Fixa in i div classer i startsida html för att
+lättare styla senare */
 body{
-    
+
     background-image: url("golf.jpg");
-    
+
 }
 h1{
     background-color: transparent;
