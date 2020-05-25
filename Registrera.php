@@ -1,25 +1,31 @@
 <?php
-if (isset($_POST['skapa konto'])) {
-  $Email = $_POST['Email']
-  $Username = $_POST['Username']
-  $Password = $_POST['Password']
 
-  $user = 'root';
-  $password = 'root';
-  $db = 'register';
-  $host = 'localhost';
-  $port = 8889;
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "golfgear"
 
-  $link = mysqli_init();
-  $success = mysqli_real_connect(
-     $link,
-     $host,
-     $user,
-     $password,
-     $db,
-     $port
-  );
+//Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
+//check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
 }
+echo "Connected successfully";
 
+//prepare and bind
+$stmt = $conn->prepare("INSERT INTO register(Email, Username, Password)
+VALUES(?, ?, ?)");
+$stmt->bind_param("sss", $Email, $Username, $Password);
+
+// set parameters and execute
+$Email = "blalala@gmail.com";
+$Username = "Martin";
+$Password = "hejejeje";
+$stmt->execute();
+
+echo "New record created successfully";
+$stmt->close();
+$conn->close();
 ?>
